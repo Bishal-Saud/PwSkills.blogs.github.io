@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW-Skills Blog</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/popup/pop.css">
+</head>
+<body>
+    <section id="homepage-section">
+        <div id="top-heading-and-PlusBtn">
+            <h2 id="pw-blog-heading">PW-Skills Blogs</h2>
+            <button id="openPopup">
+                <i id="plus" class=" fa-light fa-plus"></i>
+            </button>
+        </div>
+
+        <!-- PopUp Form  -->
+        <div id="popupContainer" class="popup drop-in ">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <div id="detailsOfBlog">
+                    <form id="form">
+                     <input type="text" name="blogUrl" placeholder="Enter Blog image Url:" id="blogUrl">
+                     <input type="text" name="title" placeholder="Title:" id="title">
+                   <input type="text" name="description" id="description" placeholder="Description:">
+                      <textarea name="write" id="write" cols="30" rows="10" placeholder="Write:"></textarea>
+                        <button id="submit-blog">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display existing blog posts -->
+        <div id="blogs">
+            <!-- Demo Blog here -->
+            
+        </div>
+    </section>
+    <script src="./src/popup/pop.js"></script>
+<script src="./src/script.js"></script>
+    <script src="https://kit.fontawesome.com/fb59a197fb.js" crossorigin="anonymous"></script>
+</body>
+</html>

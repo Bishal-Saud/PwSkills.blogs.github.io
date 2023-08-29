@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./pop.css">
+</head>
+
+<body>
+
+<button id="openPopup">Create Blogs</button>
+
+<div id="popupContainer" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+       <div id="detailsOfBlog">
+        <form id="form">
+            <label for="blogUrl"><input type="text" name="blogUrl" placeholder="Enter Blog post Url:" id="blogUrl"></label>
+            <label for="title"><input type="text" name="title" placeholder="Title:" id="title"></label>
+            <label for="description"> <input type="text" name="description" id="description" placeholder="Description:"></label>
+            <label for="write"> <textarea name="write" id="write" cols="30" rows="10" placeholder="Write:"></textarea></label>
+            <button id="submit-blog">Submit</button>
+        </form>
+       </div>
+    </div>
+</div>
+
+<script src="./pop.js"></script>
+</body>
+</html>

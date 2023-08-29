@@ -1,0 +1,120 @@
+body{
+   background-color: #00000029; 
+}
+h1,h2,h3,h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#top-heading-and-PlusBtn{
+       display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6rem;
+}
+
+#openPopup{
+    background: none;
+    border: none;
+}
+
+#plus{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.spn{
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer; 
+    padding: auto;
+}
+/* Here blog post css  */
+#blogs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.demo-blog-box,.blog-box{
+    text-align: center;
+    width: 17rem;
+    border: 1px solid;
+    margin: 10px 2rem;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 5%;
+    border: 1px solid #4242426e;
+    box-shadow: 
+  -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.demo-blog-box img{
+    background-color: #d2d2d2;
+    border-radius: 16%;
+
+}
+.demo-blog-box h2{
+    font-size: 22px;
+    margin: 20px auto;
+    text-align: left;
+    width: 100%;
+    font-family: monospace;
+}
+.read,.read-del{
+    width: auto;
+    background-color: #ffc0cb94;
+    border: none;
+    color: #ff00009c;
+    height: 28px;
+}
+
+.read a{
+    text-decoration: none;
+    color: #ff000054;
+    font-weight: bold;
+}
+.demo-blog-box p{
+    font-size: 14px;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.demo-blog-box img{
+    height: 13rem;
+    width: 13rem
+}
+.delete-readBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+/* animation class and keyframes */
+.overflow-hidden {
+    overflow: hidden;
+   }
+   
+   .drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   
+   .drop-in-2 {
+    animation: drop-in 1200ms ease 500ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+   
