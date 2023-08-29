@@ -50,6 +50,8 @@ submitBlog.addEventListener("click", (event) => {
     return new Error('All field Required !')
   }
 
+
+
   let userData = JSON.parse(localStorage.getItem("defaultPost")) ?? [];
   userData.push({
     blogUrl: blogUrl,
