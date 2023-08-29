@@ -32,7 +32,13 @@ let defaultPost = [
 
 
 const defaultData = JSON.parse(localStorage.getItem('defaultPost'))
-console.log(defaultData);
+// console.log(defaultData);
+if(!defaultData){
+  let data = localStorage.setItem('defaultPost',JSON.stringify(defaultPost))
+  console.log(data);
+
+}
+
 submitBlog.addEventListener("click", (event) => {
   let blogUrl = document.getElementById("blogUrl").value;
   let title = document.getElementById("title").value;
@@ -54,6 +60,7 @@ submitBlog.addEventListener("click", (event) => {
 
 
   localStorage.setItem("defaultPost", JSON.stringify(userData));
+  
   event.preventDefault();
 
   displayCard();
@@ -103,5 +110,6 @@ let removeData = (index) => {
 
 
 };
+
 
 displayCard();

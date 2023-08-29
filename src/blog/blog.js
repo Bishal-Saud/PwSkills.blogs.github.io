@@ -49,6 +49,6 @@ const backBtn = document.querySelectorAll('.back')
 backBtn.forEach((button) => {
     // console.log(button);
     button.addEventListener('click', () => {
-        window.location.href = 'http://127.0.0.1:5500/index.html'
+        window.location.href = '../index.html'
     })
 })
