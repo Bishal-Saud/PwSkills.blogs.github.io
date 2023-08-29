@@ -44,11 +44,19 @@ if (userData && Array.isArray(userData) && index >= 0 && index < userData.length
     alert("Invalid data in localStorage or index out of range.");
 }
 
-const backBtn = document.querySelectorAll('.back')
+const backBtns = document.querySelectorAll('.back')
 
-backBtn.forEach((button) => {
-    // console.log(button);
+// Parse the current URL
+const currentURL = new URL(window.location.href);
+
+// Get the original path (e.g., '/index.html')
+const originalPath = currentURL.origin;
+console.log(originalPath);
+
+// Add a click event listener to the back button
+backBtns.forEach((button) => {
     button.addEventListener('click', () => {
-        window.location.href = '../index.html'
-    })
-})
+        // Navigate back to the original path
+        window.location.href = originalPath;
+    });
+});
